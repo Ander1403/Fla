@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>
+	Blog do Fla
+	</title>
+	<link rel="stylesheet" type="text/css" href="_css/fotos.css"/>
+    <script type="text/javascript">
+	function anoitecer()
+		{
+			var elems = document.querySelectorAll("p, h3, h5,h1");
+			
+			for(var k=0; k<elems.length; k++)
+			{
+				elems[k].style.color = "red";
+			}
+
+			var body = document.querySelector("body");
+			body.style.backgroundColor = "black";
+		}
+	
+		</script>
+
+
+	
+</head>
+
+<script src = "_javascript/funcoes.js"></script>
+
+<body>
+<div id="interface">
+	<header id="cabecalho">
+		<img src="_imagens/fla4.png">
+	
+	<hgroup>
+	<h1>Blog do Flamengo</h1>
+	<h2>Multi-Campeão</h2>
+	</hgroup>
+	
+	
+
+<nav id="menu">
+	<h1>Menu Principal</h1>
+		<ul>
+			<li ><a href="home.html">Inicio</a></li>
+			<li ><a href="titulos.html">Titulos</a></li>
+			<li ><a href="fotos.html">Fotos</a></li>
+			<li ><a href="multimidia.html">mídia</a></li>
+			<li ><a href= "contato.html">Contato</a></li>
+			<li ><a href= "concorra.html">Cadastro</a></li>
+			<li ><a href= "index.html">Sair</a></li>
+			
+		</ul>
+
+</nav>
+<div id="noite">
+<button onclick="anoitecer();">vermelho</button>
+
+</div>
+
+</header>
+<section id="corpo-full">
+	<article id="noticia-principal">
+		<header id="cabecalho-artigo">
+			<hgroup>
+			<h3>Galeria > Fotos</h3>
+			<h1>Galeria de imagens do Flamengo</h1>
+			<h2>por Anderson Cotias</h2>
+			<h3 class="direita">Atualizado em 01/Maio/2021</h3>
+			</hgroup>
+		</header>
+
+
+
+<h1>Veja na nossa galeria de fotos</h1>
+<p>"Uma vez Flamengo,Flamengo até morrer"</p>
+
+<ul id="album-fotos">
+	<li id="foto01"><span>Campeão Copa Librtadores</span></li>
+	<li id="foto02"><span>Flamengo Hepta-campeão Brasileiro</span></li>
+	<li id="foto03"><span>Flamengo octa-campeão Brasileiro</span></li>
+	<li id="foto04"> <span>Sensação de uma tela de 50"</span></li>
+	<li id="foto05"><span>Vários tipos de lente</span></li>
+	<li id="foto06"><span>Informações importantes</span></li>
+</ul>
+	</article>
+</section>
+<footer id="rodape">
+	<form>
+	<div class="login">
+	<h4> Faça login</h4>
+
+	<div id="mail">
+	<label for="email" class="control-label"> E-mail</label>	
+	<input type="email" class="form-control" id="email">
+	</div>
+
+	<div id="senha">
+	<label for="email" class="control-label"> Senha</label>	
+	<input type="password" class="form-control">
+	<div id="entra">
+	<button class="btn btn-primary">entrar</button>
+	</div>
+							
+		</div>
+		</div>
+		</form>	
+<div id="roda">
+<ul>
+			<li ><a href="index.html">Inicio</a></li>
+			<li ><a href="specs.html">Titulos</a></li>
+			<li ><a href="fotos.html">Fotos</a></li>
+			<li ><a href="multimidia.html">Multimídia</a></li>
+			<li ><a href= "fale-conosco.html">Contato</a></li>
+			
+		</ul>
+
+	</div>
+
+<p>Copyright 2021 - by IFBA-UBA</p>
+<p> Created by Ander C.A</p>
+<p><a href="" target="_blank">Facebook</a> 
+</footer>
+</div>
+</body>
+</html>

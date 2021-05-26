@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>
+	Blog do Fla
+	</title>
+	<link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+		<script>
+		function aumentar()
+		{
+			var elems = document.querySelectorAll("p, h3, h5");
+			
+			for(var k=0; k<elems.length; k++)
+			{
+				elems[k].style.fontSize = "x-large";
+			}
+		}
+
+		function diminuir()
+		{
+			var elems = document.querySelectorAll("p, h3, h5");
+			
+			for(var k=0; k<elems.length; k++)
+			{
+				elems[k].style.fontSize = "medium";
+			}
+		}
+		
+		</script>
+		
+		<script type="text/javascript">
+function chamaURL(campo) {  
+
+document.location.href = "http://"+campo.options[campo.selectedIndex].value;      
+}  
+</script>
+
+</head>
+
+<script src = "_javascript/funcoes.js"></script>
+
+<body>
+	
+<div id="interface">
+	<header id="cabecalho">
+		<img src="_imagens/fla4.png">
+		
+
+	<hgroup>
+	<h1>Blog do Flamengo</h1>
+	<h2>Multi-Campeão</h2>
+	</hgroup>
+    		
+
+<nav id="menu">
+		<h1>Menu Principal</h1>
+		<ul>
+			<li ><a href="home.html">Inicio</a></li>
+			<li ><a href="titulos.html">Titulos</a></li>
+			<li ><a href="fotos.html">Fotos</a></li>
+			<li ><a href="multimidia.html">mídia</a></li>
+			<li ><a href= "contato.html">Contato</a></li>
+			<li ><a href= "concorra.html">Cadastro</a></li>
+			<li ><a href= "index.html">Sair</a></li>
+			
+		</ul>
+</nav>
+<!--<div id="env">
+      <a href="concorra.html">parceiros</a>
+    </div>-->
+
+        <div id="escuro">
+        <button onclick="aumentar();">Aumentar</button>
+		<button onclick="diminuir();">Diminuir</button>
+        </div>
+    	
+
+
+
+</header>
+<section id="corpo">
+	<article id="noticia-principal">
+		<header id="cabecalho-artigo">
+			<hgroup>
+			<h3>Historia > Informações</h3>
+			<h1>Saiba tudo sobre o Flamengo</h1>
+			<h2>por Anderson Cotias</h2>
+			<h3 class="direita">Atualizado em 23/maio/2021</h3>
+			</hgroup>
+		</header>
+
+
+
+
+		<h2>Historia</h2>
+		<p>O Flamengo foi fundado em 17 de novembro de 1895 para as disputas de remo. A entrada da equipe no futebol aconteceu em 1912. Atualmente, o time rubro-negro é o maior vencedor da história do Campeonato Carioca, com 31 títulos. Segundo diversas pesquisas, é o clube com o maior número de torcedores do País. Os dois principais títulos da história do Flamengo ocorreram em 1981. Comandado pelo ídolo Zico, o time conquistou a Copa Libertadores da América, em final contra o Cobreloa, do Chile, e o Mundial Interclubes, diante do Liverpool, da Inglaterra. Foi na década de 1980, também, que o Flamengo conquistou o seu primeiro Campeonato Brasileiro.  <a href="https://www.flamengo.com.br/" target="_blank">Mais sobre o flamengo</a></p>
+
+		<figure class="foto-legenda">
+			<img src="_imagens/fla.jpg"/>
+			<figcaption>
+		</figure>
+		<h2>Data de lançamento</h2>
+		<p>Não há uma data específica e oficial para o dispositivo ser lançado, ainda. Pode ser que ele esteja disponível em demonstrações a partir de 2013, mas seu lançamento para as lojas fica para, pelo menos, 2014.</p>
+
+		<h2>Ficha Técnica</h2>
+		<table id="tabelaspec">
+			<caption>Ficha Técnica <span> Mar/2021</span></caption>
+
+			<tr><td class="ce">Nome</td><td class=" cd"> Clube de Regatas Flamengo</td></tr>
+			<tr><td  class="ce">Alcunhas</td><td class=" cd"> Fla, Mengão, Mengo, Time do Povo, Rubro-Negro </td></tr>
+			<tr><td class="ce">Fundação</td><td class=" cd">  17 de novembro de 1895</td></tr>
+			<tr><td  class="ce">localização</td><td class="cd">  Rio de Janeiro - RJ, Brasil</td></tr>
+			<tr><td  class="ce">Estadio</td><td class=" cd">Maracana,Mané Garrincha e etc...</td></tr>
+			<tr><td  class="ce">Capacidade</td><td class=" cd"> 100 Mil</td></tr>
+		</table>
+
+		<h1>Conquistas recentes</h1>
+
+
+		<h2>Campeão da Supercopa 2021</h2>
+		<p></p>
+
+		<video controls="controls" poster="" style=" width: 520px">
+			<source src="_media/supercopa2021.mp4" type="video/mp4">
+		</video>
+
+	</article>
+</section>
+
+<aside id="lateral">
+	<h1>Outras Notícias do FLA</h1>
+	<h2>Vídeo mais recente FLA</h2>
+
+	<h1>Rogério vibra com vitória convincente do Flamengo na Libertadores: "Traz alegria e confiança"</h1>
+
+	<video controls="controls" poster=""  style="height: 240px">
+			<source src="_media/noticia1.mp4" type="video/mp4">
+		</video>
+
+	<p>Venceu, convenceu e embalou. A vitória por 4 a 1 sobre o La Calera não somente deu a liderança do Grupo G da Libertadores ao Flamengo, como deixou o torcedor empolgado para sequência da temporada. Com dois gols de Gabigol, grande atuação de Arrascaeta e golaço de Pedro, a exibição de gala no Maracanã na noite de terça-feira valeu muito mais que os três pontos. E quem diz isso é Rogério Ceni.mais  <a href="https://www.flamengo.com.br/" target="_blank">Mais sobre o flamengo</a></p>
+	<hr>
+
+	<h1>Com nono jogo em 31 dias, Ceni deve mandar reservas do Flamengo no Carioca...</h1>
+
+	<video controls="controls" poster=""  style="height: 240px" >
+			<source src="_media/noticia2.mp4" type="video/mp4">
+		</video>
+
+	<p>Após conquistar sua segunda vitória na Copa Libertadores, o elenco do Flamengo se reapresenta nesta quinta, no Ninho do Urubu, e inicia a preparação para a semifinal do Campeonato Carioca. O duelo com o Volta Redonda será o nono do clube com o time principal na temporada de 2021 em 31 dias. Sequência que deve fazer Rogério Ceni manter a rotina e mandar uma equipe alternativa a campo neste sábado, no Maracanã, na partida de de ida da semifinal...<a href="https://www.flamengo.com.br/" target="_blank">Mais sobre o flamengo</a></p></p>
+	<hr>
+    
+	<h2>PARCEIROS</h2>
+	<form name="form1"> 
+<select name="select" onChange="chamaURL(this)">  
+<option selected>Mais Parceiros</option>
+<option value="www.r7.com.br/"target="blank">R7</option>  
+<option value="www.g1.com.br">Uol</option>  
+<option value="www.google.com.br">G1</option>  
+<option value="www.uol.com.br"></option>
+
+</select>  
+</form>
+
+     
+
+
+
+	<ul>	
+			<li ><a href="https://colunadofla.com/"target="blank">Coluna do Fla</a></li>
+			<li ><a href="https://www.flamengo.com.br/"target="blank">Flamengo</a></li>
+			<li ><a href="https://www.flamengorj.com.br/"target="blank">Flamengorj</a></li>
+			<li ><a href="https://www.adidas.com.br/flamengo?cm_mmc=AdieSEM_Google-_-Football-Flamengo-General-G-BMM-_-Regata-Flamengo_Ad-_-%2Bclube+%2Bregatas+%2Bflamengo+%2Boficial-_-&-_-ds_kid=43700059361191463-_-&-_-ds_agid=58700005786357809-_-&-_-dv:eCom&cm_mmca1=BR&cm_mmc2=&gclid=Cj0KCQjwvr6EBhDOARIsAPpqUPF-uwpyoeBTa8xzyrBkqctolafAnU8uY2x99vW-ktEZrI_pRuc2LIwaAqplEALw_wcB&gclsrc=aw.ds"target="blank">Adidas Flamengo</a></li>
+			<li ><a href= "https://netfla.com.br/"target="blank">Netfla</a></li>
+			
+		</ul>
+	
+</aside>
+
+
+<footer id="rodape">
+	<form>
+	<div class="login">
+	<h4> Faça login</h4>
+
+	<div id="mail">
+	<label for="email" class="control-label"> E-mail</label>	
+	<input type="email" class="form-control" id="email">
+	</div>
+
+	<div id="senha">
+	<label for="email" class="control-label"> Senha</label>	
+	<input type="password" class="form-control">
+	<div id="entra">
+	<button class="btn btn-primary">entrar</button>
+	</div>
+							
+		</div>
+		</div>
+		</form>	
+<div id="roda">
+<ul>
+			<li ><a href="index.html">Inicio</a></li>
+			<li ><a href="specs.html">Titulos</a></li>
+			<li ><a href="fotos.html">Fotos</a></li>
+			<li ><a href="multimidia.html">Multimídia</a></li>
+			<li ><a href= "fale-conosco.html">Contato</a></li>
+			
+		</ul>
+
+	</div>
+
+<p>Copyright 2021 - by IFBA-UBA</p>
+<p> Created by Ander C.A</p>
+<p><a href="" target="_blank">Facebook</a> 
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>
+    Blog do Fla
+	</title>
+
+	<link rel="stylesheet" type="text/css" href="_css/media.css"/>
+	
+</head>
+
+<script src = "_javascript/funcoes.js"></script>
+<script type="text/javascript">
+	function acao(){
+var submenu = document.getElementById('submenu');
+if(submenu.style.display == 'block'){
+  submenu.style.display = 'none';
+}else{
+  submenu.style.display = 'block';
+}
+}
+</script>
+
+<body>
+
+<div id="interface">
+	<header id="cabecalho">
+		<img src="_imagens/fla4.png">
+	<hgroup>
+	<h1>Blog do Flamengo</h1>
+	<h2>multi-campeão</h2>
+	</hgroup>
+	
+	
+
+<nav id="menu">
+	<h1>Menu Principal</h1>
+		<ul>
+			<li ><a href="home.html">Inicio</a></li>
+			<li ><a href="titulos.html">Titulos</a></li>
+			<li ><a href="fotos.html">Fotos</a></li>
+			<li ><a href="multimidia.html">mídia</a></li>
+			<li ><a href= "contato.html">Contato</a></li>
+			<li ><a href= "concorra.html">Cadastro</a></li>
+			<li ><a href= "index.html">Sair</a></li>
+			
+		</ul>
+</nav>
+
+	
+</header>
+
+<section id="corpo-full">
+	<article id="noticia-principal">
+		<header id="cabecalho-artigo">
+			<hgroup>
+			<h3>Fla > Midia</h3>
+			<h1>Galeria Music&Video</h1>
+			<h2>por Anderson Cotias</h2>
+			<h3 class="direita">Atualizado em 01/Maio/2021</h3>
+			</hgroup>
+			        <h1>Assista a Final do Mundial de Clubes de 1981</h1>
+                    <h1>Escute o hino da Nação</h1>
+
+		</header>
+		<div class="nav">
+    <ul class="menu">
+        
+        <li><a href="#" onclick="acao()"><i class="fa fa-home">CLICK AQUI!!</i></a></li>
+        
+        
+    </ul>
+</div>
+
+<div class="conteudo" id="submenu" style="display:none;">
+    
+    <img src="_imagens/m.png">
+    <div id="tv-radio">
+			<audio id="musica" controls="controls">
+				<source src="_media/hino.mp3" type="audio/mpeg"/>
+				
+			</audio>
+			
+			<video id="filme" controls="controls" poster="_imagens/81.jpg">
+			<source src="_media/mengo-mengo.mp4" type="video/mp4">	
+			
+			</video>
+		</div>
+
+</div>
+
+
+		
+	</article>
+
+</section>
+
+
+<footer id="rodape">
+	<form>
+	<div class="login">
+	<h4> Faça login</h4>
+
+	<div id="mail">
+	<label for="email" class="control-label"> E-mail</label>	
+	<input type="email" class="form-control" id="email">
+	</div>
+
+	<div id="senha">
+	<label for="email" class="control-label"> Senha</label>	
+	<input type="password" class="form-control">
+	<div id="entra">
+	<button class="btn btn-primary">entrar</button>
+	</div>
+							
+		</div>
+		</div>
+		</form>	
+<div id="roda">
+<ul>
+			<li ><a href="index.html">Inicio</a></li>
+			<li ><a href="specs.html">Titulos</a></li>
+			<li ><a href="fotos.html">Fotos</a></li>
+			<li ><a href="multimidia.html">Multimídia</a></li>
+			<li ><a href= "fale-conosco.html">Contato</a></li>
+			
+		</ul>
+
+	</div>
+
+<p>Copyright 2021 - by IFBA-UBA</p>
+<p> Created by Ander C.A</p>
+<p><a href="" target="_blank">Facebook</a> 
+</footer>
+</div>
+</body>
+</html>

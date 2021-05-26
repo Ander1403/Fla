@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body{
+			     background:black
+
+		}
+    #login{
+            background: -webkit-gradient(linear, left top, left bottom, from(black), to(#800000));
+            margin: 0 auto;
+            border-radius: 10px;
+            width: 400px;
+            height: 400px;
+    }
+    #header{
+      text-align: center;
+      color:white;
+    }
+    #inputs{
+      margin-left: 100px;
+    }
+    #enviar{
+      margin-left: 100px;
+    }
+	</style>
+</head>
+<body>
+
+
+
+<script type="text/javascript">
+
+function Login() {
+  var done=0;
+  var usuario = document.getElementsByName('usuario')[0].value;
+  usuario=usuario.toLowerCase();
+  var senha= document.getElementsByName('senha')[0].value;
+  senha=senha.toLowerCase();
+  if (usuario=="flamengo" && senha=="campeão") {
+    window.location="home.html";
+    done=1;
+  }
+  if (done==0) { alert("SAI PRA LA VASCAINO 4X REBAIXADO"); 
+}
+}
+</script>
+
+<div id="login">
+  <div id="box">
+    <div id="header">
+      <h1>É FLAMENGUISTA?</h1>
+      <h1>ENTRE</h1>
+      <H2>LOGIN:QUAL O MAIOR TIME DA AMERICA</H2>
+      <H2>SENHA: O QUE O FLAMENGO FOI NO BRASILEIRO 2020?</H2>
+    </div>
+    <div id="inputs">
+      <input type="text" placeholder="Nome de usuário" name="usuario">
+      <br />
+      <input type="password" placeholder="Senha" name="senha">
+    </div>
+    <div id="enviar">
+      <input type="button" onclick="Login()" class="botao" value="Login">
+      <a href="www.google.com.br">Esqueceu a sua senha?</a>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

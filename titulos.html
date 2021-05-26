@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>
+	Blog do Fla
+	</title>
+	<link rel="stylesheet" type="text/css" href="_css/titulos.css"/>
+    <style type="text/css">
+    	#banner
+			{
+				background-image: url('_imagens/bg1.jpg');
+				width: 600px;
+				height: 400px;
+				border-radius: 10px;
+			}
+    </style>
+    <script type="text/javascript">
+		var atual = 1;
+		var timer;
+		
+		function voltar()
+		{
+			var banner = document.querySelector("#banner");
+			if(atual == 1){
+				atual = 4;
+			}
+			else{
+				atual--;
+			}
+			banner.style.backgroundImage = "url('_imagens/bg"+ atual +".jpg')";
+		}
+		
+		function avancar()
+		{
+			var banner = document.querySelector("#banner");
+			if(atual == 4){
+				atual = 1;
+			}
+			else{
+				atual++;
+			}
+			banner.style.backgroundImage = "url('_imagens/bg"+ atual +".jpg')";
+		}
+		
+		function automatico()
+		{
+			timer = setInterval(avancar, 2000); 
+		}
+		
+		</script>
+	
+</head>
+
+<script src = "_javascript/funcoes.js"></script>
+
+<body>
+<div id="interface">
+	<header id="cabecalho">
+		<img src="_imagens/fla4.png">
+	
+	<hgroup>
+	<h1>Blog do Flamengo</h1>
+	<h2>Multi-Campeão</h2>
+	</hgroup>
+	
+	
+
+<nav id="menu">
+	<h1>Menu Principal</h1>
+		<ul>
+			<li ><a href="home.html">Inicio</a></li>
+			<li ><a href="titulos.html">Titulos</a></li>
+			<li ><a href="fotos.html">Fotos</a></li>
+			<li ><a href="multimidia.html">mídia</a></li>
+			<li ><a href= "contato.html">Contato</a></li>
+			<li ><a href= "concorra.html">Cadastro</a></li>
+			<li ><a href= "index.html">Sair</a></li>
+			
+		</ul>
+</nav>
+
+</header>
+<section id="corpo-full">
+	<article id="Noticia-principal">
+		<header id="cabecalho-artigo">
+			<hgroup>
+			<h3>Flamengo > Especificações</h3>
+			<h1>Raio-X do Flamengo</h1>
+			<h2>por Anderson Cotias</h2>
+			<h3 class="direita">Atualizado em 01/Maio/2021</h3>
+
+			</hgroup>
+		</header>
+       
+        <section>
+        <div id="lista">
+        	<ul>
+        	<li ><a href="">Campeão Crioca 2019</a></li>
+			<li ><a href="specs.html">Campeão Brasileiro 2019</a></li>
+			<li ><a href="fotos.html">Campeão Braileiro 2020</a></li>
+			<li ><a href="multimidia.html">Campeão da supercopa 2020</a></li>
+			<li ><a href= "fale-conosco.html">Campeão da Supercopa 2021</a></li>
+			<li ><a href="index.html">Campeão Carioca 2020</a></li>
+			<li ><a href="specs.html">Campeão Carioca 2021</a></li>
+			<li ><a href="index.html">Campeão Recopa 2020</a></li>
+			<li ><a href="specs.html">Campeão  Recopa 2021</a></li>
+			<li ><a href= "fale-conosco.html">Campeão da Libertadores 2019</a></li>
+        		
+        		
+        	</ul>
+        </div>
+
+
+         <div id="banner"></div>
+		<button onclick="voltar();">Voltar</button>
+		<button onclick="automatico();">Automatico</button>
+		<button onclick="avancar();">Avançar</button>
+
+
+		</section>
+
+	</article>
+</section>
+
+<footer id="rodape">
+	<form>
+	<div class="login">
+	<h4> Faça login</h4>
+
+	<div id="mail">
+	<label for="email" class="control-label"> E-mail</label>	
+	<input type="email" class="form-control" id="email">
+	</div>
+
+	<div id="senha">
+	<label for="email" class="control-label"> Senha</label>	
+	<input type="password" class="form-control">
+	<div id="entra">
+	<button class="btn btn-primary">entrar</button>
+	</div>
+							
+		</div>
+		</div>
+		</form>	
+<div id="roda">
+<ul>
+			<li ><a href="index.html">Inicio</a></li>
+			<li ><a href="specs.html">Titulos</a></li>
+			<li ><a href="fotos.html">Fotos</a></li>
+			<li ><a href="multimidia.html">Multimídia</a></li>
+			<li ><a href= "fale-conosco.html">Contato</a></li>
+			
+		</ul>
+
+	</div>
+
+<p>Copyright 2021 - by IFBA-UBA</p>
+<p> Created by Ander C.A</p>
+<p><a href="" target="_blank">Facebook</a> 
+</footer>
+</div>
+</body>
+</html>
